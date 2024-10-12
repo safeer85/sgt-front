@@ -11,7 +11,7 @@ const AdminPage = () => {
     const fetchUsers = async () => {
       try {
         const token = localStorage.getItem('token'); // Get the token from local storage
-        const response = await axios.get('http://localhost:5000/api/users', {
+        const response = await axios.get('https://calm-dango-2d9f93.netlify.app/api/users', {
           headers: {
             Authorization: `Bearer ${token}`,
           },
@@ -29,7 +29,7 @@ const AdminPage = () => {
   const handleDelete = async (userId) => {
     try {
       const token = localStorage.getItem('token'); // Get the token from local storage
-      await axios.delete(`http://localhost:5000/api/users/${userId}`, {
+      await axios.delete(`https://calm-dango-2d9f93.netlify.app/api/users/${userId}`, {
         headers: {
           Authorization: `Bearer ${token}`,
         },
