@@ -281,7 +281,7 @@ const Dashboard = () => {
                 Object.keys(gradesByTerm).map(term => (
                     <div key={term}>
                         
-                        <h2>Term {term}</h2>
+                        <h2 style={{ textAlign: 'center', color: 'black' }}>Term {term}</h2>
                         
                         <table className="grades-table">
                             <thead>

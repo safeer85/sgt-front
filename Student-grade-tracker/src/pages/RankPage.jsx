@@ -46,7 +46,7 @@ const RankPage = () => {
       {error && <p className="error-message">{error}</p>}
       {Object.keys(ranks).map(term => (
         <div key={term}>
-          <h2 style="text-align: center;" color='black'>Term {term}</h2>
+          <h2 style={{ textAlign: 'center', color: 'black' }}>Term {term}</h2>
           <table className="rank-table">
             <thead>
               <tr>
