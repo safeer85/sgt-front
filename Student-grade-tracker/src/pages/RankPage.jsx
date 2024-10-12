@@ -23,7 +23,7 @@ const RankPage = () => {
         const rankData = {};
 
         for (const term of terms) {
-          const ranksResponse = await axios.get(`/api/ranks?term=${term}`, {
+          const ranksResponse = await axios.get(`https://sgt-back-uoua.vercel.app/api/ranks?term=${term}`, {
             headers: {
               Authorization: `Bearer ${token}`,
             },
