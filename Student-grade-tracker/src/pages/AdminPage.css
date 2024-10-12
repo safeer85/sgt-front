@@ -1,0 +1,37 @@
+/* AdminPage.css */
+.page-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.admin-page-container {
+  flex: 1;
+  padding: 20px;
+  padding-top: 100px;
+  overflow-y: auto;
+}
+
+.admin-page-header {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.user-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.user-table th, .user-table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+.user-table th {
+  background-color: #f4f4f4;
+  text-align: left;
+}
+
+.error-message {
+  color: red;
+}

@@ -1,0 +1,6 @@
+/* App.css */
+.main-content {
+    margin-left: 200px; /* Add left margin to account for the width of the side menu */
+    padding-top: 60px;  /* Add top padding to account for the fixed navbar */
+    padding-left: 20px; /* Add left padding for some spacing */
+}

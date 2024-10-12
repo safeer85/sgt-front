@@ -1,0 +1,52 @@
+/* Navbar.css */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav {
+   /* background-color: #00032b;*/
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-between; /* Ensure items are spaced evenly */
+    align-items: center; /* Center items vertically */
+    position: fixed; /* Make the navbar fixed */
+    top: 0; /* Align it to the top */
+    width: 100%; /* Make it full width */
+    z-index: 1100; /* Ensure it appears above other elements */
+    border-bottom-left-radius: 0.1cm;
+    border-bottom-right-radius: 0.11cm;
+}
+
+.navbar-left {
+    display: flex;
+    align-items: center; /* Center items vertically */
+}
+
+.menu-toggle {
+    color: white;
+    font-size: 1.5rem;
+    cursor: pointer;
+    padding: 0.5em;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 0.5em 1em;
+    margin: 0 0.5em;
+    font-weight: bold;
+}
+
+nav a:hover {
+    background-color: #555;
+    border-radius: 5px;
+}
+.navbar-logo {
+    height: 80px; /* Adjust the height as needed */
+    width: 80px; /* Maintain the aspect ratio */
+    margin :0;
+    padding : 0; /* Adjust the margin as needed */
+}

@@ -1,0 +1,51 @@
+/* Basic styles for the RankPage */
+.rank-page-container {
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+    font-family: Arial, sans-serif;
+    padding-top: 100px;
+}
+
+.rank-page-header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.rank-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.rank-table th,
+.rank-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+}
+
+.rank-table th {
+    background-color: #f4f4f4;
+    font-weight: bold;
+}
+
+.rank-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.rank-table tr:hover {
+    background-color: #f1f1f1;
+}
+
+.error-message {
+    color: red;
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Style for the highlighted row */
+.highlighted-row {
+    background-color: #ffeb3b; /* Light yellow background */
+    font-weight: bold; /* Bold text */
+}
