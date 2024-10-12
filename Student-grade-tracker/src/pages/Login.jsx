@@ -17,7 +17,7 @@ const Login = () => {
         e.preventDefault();
         const { email, password } = data;
         try {
-            const response = await axios.post('https://calm-dango-2d9f93.netlify.app/login', {
+            const response = await axios.post('http://localhost:5000/login', {
                 email,
                 password
             });

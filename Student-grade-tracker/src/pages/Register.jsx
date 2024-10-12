@@ -17,7 +17,7 @@ const Register = () => {
     e.preventDefault();
     const { name, email, password, scienceField } = data;
     try {
-      const { data } = await axios.post('https://calm-dango-2d9f93.netlify.app/register', {
+      const { data } = await axios.post('http://localhost:5000/register', {
         name, email, password, scienceField
       });
       if (data.error) {
