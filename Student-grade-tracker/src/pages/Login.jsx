@@ -17,7 +17,7 @@ const Login = () => {
         e.preventDefault();
         const { email, password } = data;
         try {
-            const response = await axios.post('http://localhost:5000/login', {
+            const response = await axios.post('https://sgt-back-uoua.vercel.app/login', {
                 email,
                 password
             });

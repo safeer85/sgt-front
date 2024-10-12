@@ -33,7 +33,7 @@ const Dashboard = () => {
             try {
                 const token = localStorage.getItem('token'); // Assume the token is stored in local storage
                 if (token) {
-                    const userResponse = await axios.get('http://localhost:5000/api/user', {
+                    const userResponse = await axios.get('https://sgt-back-uoua.vercel.app/api/user', {
                         headers: {
                             'Authorization': `Bearer ${token}`
                         }
@@ -42,7 +42,7 @@ const Dashboard = () => {
                     setScienceField(userResponse.data.scienceField); // Set science field
                 }
 
-                const gradesResponse = await axios.get('http://localhost:5000/api/grades', {
+                const gradesResponse = await axios.get('https://sgt-back-uoua.vercel.app/api/grades', {
                     headers: {
                         'Authorization': `Bearer ${token}`
                     }
@@ -120,7 +120,7 @@ const Dashboard = () => {
     
             // Check if grades for the selected term already exist
             const duplicateGrades = await Promise.all(subjects.map(async (subject) => {
-                const response = await axios.get(`http://localhost:5000/api/grades/exist`, {
+                const response = await axios.get(`https://sgt-back-uoua.vercel.app/api/grades/exist`, {
                     params: { term: formData.term, moduleName: subject },
                     headers: { 'Authorization': `Bearer ${token}` }
                 });
@@ -134,7 +134,7 @@ const Dashboard = () => {
     
             // Proceed with adding grades...
             const newGrades = await Promise.all(subjects.map(async (subject) => {
-                const response = await axios.post('http://localhost:5000/api/grades', { 
+                const response = await axios.post('https://sgt-back-uoua.vercel.app/api/grades', { 
                     moduleName: subject,
                     grade: formData[subject],
                     term: formData.term
@@ -159,7 +159,7 @@ const Dashboard = () => {
     const handleDelete = async (gradeId) => {
         try {
             const token = localStorage.getItem('token'); // Assume the token is stored in local storage
-            await axios.delete(`http://localhost:5000/api/grades/${gradeId}`, {
+            await axios.delete(`https://sgt-back-uoua.vercel.app/api/grades/${gradeId}`, {
                 headers: {
                     'Authorization': `Bearer ${token}`
                 }

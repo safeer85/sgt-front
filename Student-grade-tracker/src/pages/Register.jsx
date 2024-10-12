@@ -17,7 +17,7 @@ const Register = () => {
     e.preventDefault();
     const { name, email, password, scienceField } = data;
     try {
-      const { data } = await axios.post('http://localhost:5000/register', {
+      const { data } = await axios.post('https://sgt-back-uoua.vercel.app/register', {
         name, email, password, scienceField
       });
       if (data.error) {
