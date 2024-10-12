@@ -11,7 +11,7 @@ const RankPage = () => {
     const fetchUserData = async () => {
       try {
         const token = localStorage.getItem('token');
-        const userResponse = await axios.get('/api/user', {
+        const userResponse = await axios.get('https://sgt-back-uoua.vercel.app/api/user', {
           headers: {
             Authorization: `Bearer ${token}`,
           },
