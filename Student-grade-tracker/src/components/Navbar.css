@@ -19,6 +19,7 @@ nav {
     border-bottom-right-radius: 0.11cm;
     box-sizing: border-box; /* Include padding and borders in the element's total width/height */
     height: 60px; /* Set a fixed height */
+    overflow-x: auto;
 }
 
 /* Media query for smaller screens */
