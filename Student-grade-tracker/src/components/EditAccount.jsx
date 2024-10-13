@@ -21,7 +21,7 @@ const EditAccount = () => {
         }
 
         try {
-            const response = await fetch('/api/user', {
+            const response = await fetch('https://sgt-back-uoua.vercel.app/api/user', {
                 method: 'PUT',
                 headers: {
                     'Authorization': `Bearer ${token}`,

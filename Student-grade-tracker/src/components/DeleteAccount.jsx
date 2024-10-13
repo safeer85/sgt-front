@@ -20,7 +20,7 @@ const DeleteAccount = () => {
         }
 
         try {
-            const response = await fetch('/api/user', {
+            const response = await fetch('https://sgt-back-uoua.vercel.app/api/user', {
                 method: 'DELETE',
                 headers: {
                     'Authorization': `Bearer ${token}`,
