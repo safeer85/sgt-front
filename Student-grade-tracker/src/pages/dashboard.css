@@ -91,13 +91,12 @@ button:hover {
 }
 
 .grades-table {
-    width: 500px; /* Change to auto to fit content */
-    max-width: 600px; /* Set a maximum width for the table */
-    border-collapse: collapse;
-    margin: 0 auto 20px; /* Center the table */
-     /* Add border radius for rounded corners */
+    
     overflow: hidden; 
-    background-color: #28a745;
+    background-color: #ffffff;
+    margin-left: auto;
+  margin-right: auto;
+  border-collapse: collapse;
     
 }
 
@@ -111,7 +110,7 @@ button:hover {
 }
 
 .grades-table th {
-    background-color: #d15e5e;
+    background-color: #ffffff;
     color: black;
     font-weight: bold;
 }
